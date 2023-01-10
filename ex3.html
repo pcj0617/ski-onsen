@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            .js{
+                font-weight: bold;
+                color: red;
+            }
+            #first{
+                color: rgb(131, 48, 118);
+            }
+            span{
+                color: rgb(155, 10, 61);
+            }
+        </style>
+
+
+<input id="night_day" type="button" value="night" onclick="
+var target=document.querySelector('body');
+if(this.value==='night'){
+    target.style.backgroundColor='black';
+    target.style.color='white';
+    this.value='day';
+
+    var alist=document.querySelectorAll('a');
+    var i=0;
+    while(i<alist.length){
+        alist[i].style.color='powderblue';
+        i=i+1;
+    }
+} else {
+    target.style.backgroundColor='white';
+    target.style.color='black';
+    this.value='night';
+
+    var alist=document.querySelectorAll('a');
+    var i=0;
+    while(i<alist.length){
+        alist[i].style.color='blue';
+        i=i+1;
+    }
+}      
+">
+
+    </head>
+<body>
+    <h1><a href="https://www.zao-spa.or.jp/english/">Trip in Zao</a></h1>
+    <ol>
+    <li><h2 style="width:100px;background-color: rgb(157, 143, 33); color: powderblue;">Ski</h2></li>
+    <li><h2 style="width:100px;background-color: coral; color: powderblue;"><a href="onsen.png">Onsen</a> </h2></li>
+    </ol>
+
+
+    <p>
+    <span id="first" class="js">Zao Onsen</span>, traditional Japanese hot springs with 1900 years of history
+    Zao Onsen is one of the top spots for strong acidic <span>hot springs</span> in Japan.Its springs are sometimes even called the <span class="js">"Springs of Beauty”.</span>
+    </p>
+
+
+
+
+</body>
+</html>
+
+
